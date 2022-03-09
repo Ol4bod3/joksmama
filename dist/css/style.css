@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+header .con {
+  display: flex;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .con .logo {
+  width: 4rem;
+  height: 4rem;
+  background-image: url(../../images/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+header .con nav ul {
+  display: flex;
+}
+header .con nav ul li {
+  padding-left: 3rem;
+}
+header .con nav ul li a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+header .con .hamBurger {
+  display: none;
+}
+
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/bg.jpg);
+  height: 100%;
+  width: 100%;
+}
+#home .con {
+  width: 95%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#home .con h1 {
+  font-size: calc(32px + 16 * (70vw - 420px) / 200);
+  font-family: "Satisfy", cursive;
+  color: #fff;
+  width: 50%;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+#home .con .btn {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  margin-left: 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+#home .con .btn:hover {
+  cursor: pointer;
+  color: #192331;
+  background-color: #fff;
+  border: none;
+}
+#home .con .g {
+  background-color: tomato;
+}
+#home .con .g:hover {
+  cursor: pointer;
+  color: #192331;
+  background-color: #fff;
+  border: none;
+}
+#home .con .scroll {
+  cursor: pointer;
+}
+#home .con .scroll .arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  margin-left: -30px;
+  bottom: 20px;
+}
+#home .con .scroll .arrows path {
+  stroke: #fff;
+  fill: transparent;
+  stroke-width: 1px;
+  -webkit-animation: arrow 2s infinite;
+          animation: arrow 2s infinite;
+}
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#home .con .scroll .arrows path.a1 {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+#home .con .scroll .arrows path.a2 {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+#home .con .scroll .arrows path.a3 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../images/bg-2.jpg);
+  background-size: 100% 100%;
+}
+#about .con {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .con .img-con {
+  margin: 3rem;
+  width: 30vw;
+  height: 50vh;
+  border: 3px dashed #fff;
+}
+#about .con .img-con .img {
+  width: 30vw;
+  height: 50vh;
+  background-image: url(../../images/about.jpg);
+  background-size: 100% 100%;
+  position: absolute;
+  transform: translate(1rem, 10px);
+}
+#about .con .text {
+  width: 40%;
+  color: #fff;
+}
+#about .con .text .wel {
+  font-family: cursive;
+}
+#about .con .text h3 {
+  font-family: "satisfy", cursive;
+  font-size: 1.8em;
+  padding-top: 0.5rem;
+}
+#about .con .text p {
+  padding-top: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+#about .con .text .btn {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  margin-left: 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+#about .con .text .btn:hover {
+  cursor: pointer;
+  color: #192331;
+  background-color: #fff;
+  border: none;
+}
+
+#we_serve {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+#we_serve h2 {
+  font-family: "satisfy", cursive;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+#we_serve .con {
+  padding: 2rem;
+  height: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+#we_serve .con .food {
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+#we_serve .con .food .img {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#we_serve .con .food .img img {
+  height: 250px;
+  width: 100%;
+}
+#we_serve .con .food h3 {
+  font-family: "Courier New", Courier, monospace;
+  margin: 10px;
+  font-weight: bold;
+}
+#we_serve .con .food p {
+  font-family: cursive;
+  font-weight: 100;
+}
+
+#gallery-section {
+  height: 100%;
+  background-color: #191921;
+}
+#gallery-section h2 {
+  padding: 1rem 4rem;
+  text-align: center;
+  font-family: "satisfy", cursive;
+  font-size: 2rem;
+  color: #fff;
+}
+#gallery-section #gallery {
+  line-height: 0;
+  -moz-column-count: 5 !important;
+       column-count: 5 !important;
+  -moz-column-gap: 5px !important;
+       column-gap: 5px !important;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+}
+#contact .contact-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact-form .form-con {
+  padding-top: 20px;
+}
+#contact .contact-form .form-con h3 {
+  margin: 20px;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#contact .contact-form .form-con p {
+  font-size: 1rem;
+  text-align: center;
+}
+#contact .contact-form .form-con form {
+  margin-top: 40px;
+}
+#contact .contact-form .form-con form .input-con {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: 1px solid #191921;
+}
+#contact .contact-form .form-con form .input-con input {
+  border: none;
+  width: 100%;
+  padding-left: 10px;
+}
+#contact .contact-form .form-con form textarea {
+  border: none;
+  width: 100%;
+  margin-top: 40px;
+  border-bottom: 1px solid #191921;
+}
+#contact .contact-form .form-con form .btn {
+  border: none;
+  width: 100%;
+  color: #fff;
+  padding: 0.7rem;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  background: #191921;
+}
+#contact .contact-form .form-con form .btn i {
+  padding-right: 10px;
+}
+#contact .contact-form .form-con .email {
+  margin: 40px;
+}
+#contact .contact-form .form-con .email p {
+  padding: 0.3rem;
+}
+#contact .google-map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#contact .google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  height: 10vh;
+  background: #191921;
+  text-align: center;
+  margin: 0 auto;
+}
+footer .footer-con {
+  height: 100%;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .footer-con .social-icon i {
+  font-size: 2rem;
+  padding-right: 20px;
+}
+
+@media (max-width: 1284px) {
+  header .con {
+    padding: 0 10px;
+  }
+  header .con .logo {
+    width: 3rem;
+    height: 3rem;
+  }
+  header .con .navbar {
+    display: none;
+  }
+  header .con .navOpen {
+    position: absolute;
+    width: 100% !important;
+    left: 0;
+    height: 90vh;
+    top: 5rem;
+    background-color: #191921;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: all 2s ease;
+  }
+  header .con .navOpen ul {
+    position: relative;
+    top: -14%;
+    flex-direction: column;
+  }
+  header .con .navOpen ul li {
+    list-style: none;
+    margin: 1.5rem;
+  }
+  header .con .navOpen ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+  header .con .navOpen ul li a:hover {
+    background-color: #fff;
+    color: #191921;
+  }
+  header .con .hamBurger {
+    display: block !important;
+    cursor: pointer;
+  }
+  header .con .hamBurger i {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  #home .con h1 {
+    text-align: center;
+    width: 100%;
+    font-size: calc(52px + 16 * (90vw - 220px) / 200) !important;
+  }
+  #home .con .btn-con {
+    display: flex;
+  }
+  #home .con .btn-con .btn {
+    font-size: 20px !important;
+    padding: 1rem !important;
+  }
+
+  #about {
+    height: 100%;
+  }
+  #about .con {
+    height: 100%;
+    padding: 40px 0;
+    flex-direction: column;
+  }
+  #about .con .img-con {
+    display: none;
+  }
+  #about .con .text {
+    width: 100%;
+  }
+  #about .con .text h3 {
+    font-size: 190% !important;
+  }
+  #about .con .text p {
+    line-height: 130% !important;
+    font-size: 120% !important;
+  }
+
+  #we_serve .con {
+    align-content: center;
+    justify-content: center;
+  }
+  #we_serve .con .food {
+    width: 70%;
+  }
+
+  #contact {
+    height: 100%;
+    flex-direction: column;
+  }
+  #contact .google-map {
+    height: 30vh;
+  }
+
+  footer p {
+    width: 50%;
+  }
+}
+@media (max-width: 1440px) {
+  #home .con h1 {
+    text-align: center;
+    width: 100%;
+    font-size: calc(52px + 16 * (40vw - 220px) / 200) !important;
+  }
+  #home .con .btn-con {
+    display: flex;
+  }
+  #home .con .btn-con .btn {
+    padding: 0.6rem !important;
+  }
+}
+@media (max-width: 650px) {
+  #home .con {
+    height: 100vh;
+  }
+  #home .con h1 {
+    text-align: center;
+    width: 100%;
+    font-size: calc(52px + 16 * (10vw - 220px) / 200) !important;
+    padding-top: 0 !important;
+  }
+  #home .con .btn-con {
+    display: flex;
+  }
+  #home .con .btn-con .btn {
+    padding: 0.4rem;
+    font-size: 13px !important;
+  }
+
+  #about .con .text h3 {
+    font-size: 1.3rem;
+  }
+  #about .con .text p {
+    font-size: 0.6rem;
+  }
+}/*# sourceMappingURL=style.css.map */
