@@ -314,9 +314,11 @@ header .con .hamBurger {
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
+  font-family: "satisfy", cursive;
 }
 #contact .contact-form .form-con p {
   font-size: 1rem;
+  font-family: cursive;
   text-align: center;
 }
 #contact .contact-form .form-con form {
